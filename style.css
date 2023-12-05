@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Press+Start+2P&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    margin-top: 50px;
+    /* background-color: #16FF00; */
+}
+h3{
+    font-family: 'Press Start 2p';
+    font-size: 40px;
+    color: red;
+}
+.target p{
+    font-size: 30px;
+    color:red;
+}
+.last-ball{
+    height: 30vh;
+}
+button{
+    cursor: pointer;
+    background-color: #ecfd00;
+    font-size: 30px;
+    margin: 4px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 45%;
+}
+.finish{
+    font-size: 20px;
+    padding: 20px 25px;
+}
+input{
+    display: none;
+}
+p{
+    font-family: 'Akaya Kanadaka';
+    font-size: 20px;
+    font-weight: bolder;
+    /* color: white; */
+}
+
+h1{
+    color: red;
+}
+
+h2{
+    font-size: 60px;
+    color: red;
+    font-family: 'Press Start 2p';
+    margin: 30px;
+}
+
+.last-ball{
+    margin-top: 40px;
+    padding-top:20px ;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+}
+.score p{
+    margin: 5px;
+}
+.score-board{
+    margin-top: 30px;
+}

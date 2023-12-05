@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="target">
+            <h3>super over match</h3>
+            <p>Target <span></span></p>
+        </div>
+
+        <div class="last-ball">
+            <p>last ball</p>
+            <h1></h1>
+            <h2></h2>
+        </div>
+
+        <input type="text" id="display">
+        <p>Balls</p>
+        <div class="buttons">
+            <button class="ball-1" onclick="
+        let one = (Math.floor(Math.random()*5)+2);
+        currentDisplay = currentDisplay +  '+' + one ;
+        document.querySelector('#display').value = currentDisplay;
+        document.querySelector('.ball-1').style.visibility='hidden';
+        document.querySelector('h1').innerText = one;
+        document.querySelector('.p1').innerText=one;
+        ">1</button>
+
+            <button class="ball-2" onclick="
+        let two = (Math.floor(Math.random()*5)+2);
+        currentDisplay = currentDisplay + '+' + two;
+        document.querySelector('#display').value = currentDisplay;
+        document.querySelector('.ball-2').style.visibility='hidden';
+        document.querySelector('h1').innerText = two;
+        document.querySelector('.p2').innerText=two;
+        ">2</button>
+
+            <button class="ball-3" onclick="
+            let three = (Math.floor(Math.random()*5)+2);
+        currentDisplay = currentDisplay + '+' + three;
+        document.querySelector('#display').value = currentDisplay;
+        document.querySelector('.ball-3').style.visibility='hidden';
+        document.querySelector('h1').innerText = three;
+        document.querySelector('.p3').innerText=three;
+        ">3</button>
+
+            <button class="ball-4" onclick="
+            let four = (Math.floor(Math.random()*5)+2);
+        currentDisplay = currentDisplay +  '+' + four;
+        document.querySelector('#display').value = currentDisplay;
+        document.querySelector('.ball-4').style.visibility='hidden';
+        document.querySelector('h1').innerText = four;
+        document.querySelector('.p4').innerText=four;
+        ">4</button>
+
+            <button class="ball-5" onclick="
+            let five = (Math.floor(Math.random()*5)+2);
+        currentDisplay = currentDisplay +  '+' + five;
+        document.querySelector('#display').value = currentDisplay;
+        document.querySelector('.ball-5').style.visibility='hidden';
+        document.querySelector('h1').innerText = five;
+        document.querySelector('.p5').innerText=five;
+        ">5</button>
+
+            <button class="ball-6" onclick="
+            let six = (Math.floor(Math.random()*5)+2);
+        currentDisplay = currentDisplay +  '+' + six;
+        document.querySelector('#display').value = currentDisplay;
+        document.querySelector('.ball-6').style.visibility='hidden';
+        document.querySelector('h1').innerText = six;
+        document.querySelector('.p6').innerText=six;
+        ">6</button>
+
+            <button class="finish" onclick="
+        let result = eval(currentDisplay);
+        currentDisplay = result;
+        document.querySelector('#display').value = currentDisplay;
+        if (result > target) {
+            document.querySelector('h2').innerText='You Win';
+        } else {
+            document.querySelector('h2').innerText='You Lose';
+        }
+        ">finish</button>
+
+        </div>
+
+        <p class="score-board">score</p>
+        <div class="score">
+            <p class="p1"></p>
+            <p class="p2"></p>
+            <p class="p3"></p>
+            <p class="p4"></p>
+            <p class="p5"></p>
+            <p class="p6"></p>
+        </div>
+
+    </div>
+    <script>
+        let currentDisplay = '';
+        document.querySelector('#display').value = currentDisplay;
+
+        let target = (Math.floor(Math.random()*17)+19);
+        document.querySelector('span').innerText = target;
+
+        let matchScore;
+        
+    </script>
+</body>
+
+</html>
